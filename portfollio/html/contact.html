@@ -4,11 +4,73 @@
 
     </head>
     <body>
-        <ol>
-            <li>Email  : hashameealshahriaraditya@gmail.com</li><br>
-            <li>Phone  : 01303088501</li><br>
-            <li>Address: Chinema hall para, Hospital Road, Chuadanga, Bangladesh.</li><br>
-        </ol>
+       <form> 
+        <label for="fname">First Name: </label><br>
+        <input type="text" name="fname" required><br>
+        <label for="lname">Last Name:  </label><br>
+        <input type="text" name="lname" required><br>
+        <label for="email">Email:      </label><br>
+        <input type="email" name="email" required><br>
+        <label for="pwd">Password:     </label><br>
+        <input type="password" id="pwd" name="pwd" required><br>
+        <label for="name">Company:     </label><br>
+        <input type="text" name="name"><br><br>
+        
+        <p>Reason for Contact:</p>
+        <input type="radio" name="contact" value="Project">
+        <label for="contact">Project</label><br>
+        <input type="radio" name="contact" value="Thesis">
+        <label for="contact">Thesis</label><br>
+        <input type="radio" name="contact" value="Job">
+        <label for="contact">Job</label><br>
+
+        <p>Services you provide:</p>
+        <input type="checkbox" name="dog" value="Dog">
+        <label for="dog">Dog</label><br>
+        <input type="checkbox" name="cat" value="Cat">
+        <label for="cat">Cat</label><br>
+        <input type="checkbox" name="tiger" value="Tiger">
+        <label for="tiger">Tiger</label><br><br>
+
+        <label for="appointment">Appointment:</label>
+        <select name="appointment">
+            <option value="morning">Morning</option>
+            <option value="noon">Noon</option>
+            <option value="afternoon">Afternoon</option>
+        </select><br><br>
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+
+
+        <table>
+            <tr>
+                <th>Languages</th>
+                <th>Tools</th>
+                <th>Skills</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>VS Code</td>
+                <td>Leadership</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>PyCharm</td>
+                <td>Time Management</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>IntelliJ</td>
+                <td>Presentation</td>
+            </tr>
+        </table>
+
+
+
+       </form> 
 
     </body>
 </html>
