@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link  rel="stylesheet" href="../css/contact.css">
+
+       
 
     </head>
     <body>
+
+    <div class="formShape">
        <form> 
-        <label for="fname">First Name: </label><br>
+        <div class="inputInfo">
+        <label for="fname">First Name: </label>
         <input type="text" name="fname" required><br>
-        <label for="lname">Last Name:  </label><br>
+        <label for="lname">Last Name:  </label>
         <input type="text" name="lname" required><br>
-        <label for="email">Email:      </label><br>
+        <label for="email">Email:      </label>
         <input type="email" name="email" required><br>
-        <label for="pwd">Password:     </label><br>
+        <label for="pwd">Password:     </label>
         <input type="password" id="pwd" name="pwd" required><br>
-        <label for="name">Company:     </label><br>
+        <label for="name">Company:     </label>
         <input type="text" name="name"><br><br>
+        </div>
         
         <p>Reason for Contact:</p>
         <input type="radio" name="contact" value="Project">
@@ -30,13 +37,14 @@
         <input type="checkbox" name="cat" value="Cat">
         <label for="cat">Cat</label><br>
         <input type="checkbox" name="tiger" value="Tiger">
-        <label for="tiger">Tiger</label><br><br>
+        <label for="tiger">Miki</label><br><br>
 
         <label for="appointment">Appointment:</label>
         <select name="appointment">
-            <option value="morning">Morning</option>
+          <!--  <option value="morning">Morning</option>
             <option value="noon">Noon</option>
-            <option value="afternoon">Afternoon</option>
+            <option value="afternoon">Afternoon</option>-->
+            <input type="datetime-local" id="appointment" value="mm/dd/yy">
         </select><br><br>
 
 
@@ -71,6 +79,7 @@
 
 
        </form> 
+    </div>
 
     </body>
 </html>
