@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Real Time Management System</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Incident Management System</h1>
+        <nav>
+            <button id="reportBtn">Report Incident</button>
+            <button id="monitorBtn">Monitor Incidents</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="reportSection" class="hidden">
+            <h2>Report a New Incident</h2>
+            <form id="incidentForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+                
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="IT">IT Issue</option>
+                    <option value="Security">Security</option>
+                    <option value="Emergency">Emergency</option>
+                </select>
+                
+                <label for="priority">Priority:</label>
+                <select id="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                
+                <button type="submit">Submit Incident</button>
+            </form>
+        </section>
+        
+        <section id="monitorSection">
+            <h2>Incident Dashboard</h2>
+            <div id="incidentList"></div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
